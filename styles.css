@@ -1052,12 +1052,16 @@ a.nav-card {
   max-width: 1050px;
   margin: 28px auto 0;
   padding: 24px 30px;
-  display: flex;
-  align-items: center;
+  display: grid;
   gap: 20px;
   border: 1px dashed rgba(174, 143, 177, .4);
   border-radius: 22px;
   background: rgba(255,255,255,.62);
+}
+.video-note-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .video-note-icon {
   flex: 0 0 auto;
@@ -1071,11 +1075,20 @@ a.nav-card {
   font-size: 17px;
 }
 .video-note h2 { font-size: 24px; }
-.video-note > div > p:last-child {
+.video-note-heading > div > p:last-child {
   margin: 8px 0 0;
   color: #806f87;
   font-size: 14px;
   line-height: 1.6;
+}
+.message-video {
+  display: block;
+  width: min(100%, 760px);
+  max-height: 70vh;
+  margin: 0 auto;
+  border-radius: 18px;
+  background: #211b26;
+  box-shadow: 0 14px 35px rgba(101, 76, 109, .12);
 }
 @media (max-width: 900px) {
   .letter-layout { grid-template-columns: 1fr; }
@@ -1095,7 +1108,8 @@ a.nav-card {
   .message-photo-main { grid-row: auto; }
   .message-photo img { max-height: 520px; }
   .message-photo-pair .message-photo img { max-height: 340px; }
-  .video-note { align-items: flex-start; gap: 14px; padding: 22px 18px; }
+  .video-note { gap: 16px; padding: 22px 18px; }
+  .video-note-heading { align-items: flex-start; gap: 14px; }
   .video-note-icon { width: 40px; height: 40px; }
 }
 
