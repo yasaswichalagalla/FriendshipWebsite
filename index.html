@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff7fb" />
+    <title>For You 💜</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Go home">
+          <span class="brand-mark">♡</span>
+          <span>Our Little Universe</span>
+        </a>
+        <button class="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow"><span>✦</span> A special place for us <span>✦</span></p>
+        <h1 id="hero-title">Welcome, <em>beautiful</em> <span class="heart">♡</span></h1>
+        <p class="hero-copy">A little world filled with memories, laughter, and everything that makes us <strong>us</strong>.</p>
+      </section>
+
+      <nav class="nav-grid" aria-label="Main navigation">
+        <a class="nav-card card-her" href="her-world.html">
+          <span class="nav-icon">💕</span>
+          <span class="nav-label">Her World</span>
+          <span class="nav-arrow">›</span>
+        </a>
+        <a class="nav-card card-memories" href="memories.html">
+          <span class="nav-icon">📸</span>
+          <span class="nav-label">Memories</span>
+          <span class="nav-arrow">›</span>
+        </a>
+        <a class="nav-card card-messages" href="messages.html">
+          <span class="nav-icon">💌</span>
+          <span class="nav-label">Messages</span>
+          <span class="nav-arrow">›</span>
+        </a>
+        <a class="nav-card card-bts" href="bts-v.html">
+          <span class="nav-icon">💜</span>
+          <span class="nav-label">BTS &amp; V</span>
+          <span class="nav-arrow">›</span>
+        </a>
+
+        <div class="nav-card card-kdrama" data-expandable>
+          <button class="card-main" type="button" aria-expanded="false">
+            <span class="nav-icon">🎬</span>
+            <span class="nav-label">K-Drama</span>
+            <span class="nav-chevron">⌄</span>
+          </button>
+          <a class="subnav" href="business-proposal.html#drama-quiz"><span>Quiz</span><span>›</span></a>
+          <a class="subnav" href="business-proposal.html"><span>Business Proposal</span><span>›</span></a>
+        </div>
+
+      </nav>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
